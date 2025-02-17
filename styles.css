@@ -1,0 +1,90 @@
+@charset 'UTF-8'; 
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            transition: background 0.3s;
+        }
+
+        .container {
+            text-align: center;
+            background: rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.295);
+            transition: 0.3s;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.1);
+        }
+
+        .name {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .bio {
+            color: rgba(43, 41, 42, 0.514);
+            margin: 10px 0;
+        }
+
+        .social a {
+            margin: 5px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        .social a:hover {
+            color: #007bff;
+        }
+
+        .theme-toggle {
+            margin-top: 15px;
+            padding: 8px 15px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .theme-toggle:hover {
+            background: #0056b3;
+        }
+
+        .dark-mode {
+            background: #222;
+            color: white;
+        }
+        .dark-mode .container {
+            background: #a89696;
+            color: white;
+        }
+        .dark-mode .theme-toggle {
+            background: #0056b3;
+        }
+        .dark-mode .social a {
+            color: white;
+        }

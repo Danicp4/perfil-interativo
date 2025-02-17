@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão de Perfil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="dani.jpg" alt="Foto de Perfil" class="profile-img">
+        <div class="name">Danielle Corrêa</div>
+        <div class="bio">Desenvolvedor Web | Apaixonado por Tecnologia</div>
+        <div class="social">
+            <a href="#">🔗 GitHub</a>
+            <a href="#">🐦 Twitter</a>
+            <a href="#">💼 LinkedIn</a>
+        </div>
+        <button class="theme-toggle">Alternar Tema</button>
+    </div>
+
+    <script>
+        const toggleButton = document.querySelector('.theme-toggle');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
